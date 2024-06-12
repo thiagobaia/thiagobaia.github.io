@@ -1,77 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/fav-icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./build/index.css" rel="stylesheet" />
-    <link href="./css/hamburger.css" rel="stylesheet" />
-    <title>Tukano Digital</title>
-  </head>
 
-  <body>
-    <div id="app">
-      <div class="bg-gradient-to-r from-orange-400 to-amber-200">
-        <nav class="bg-transparent w-screen">
-          <div
-            class="container mx-auto px-6 py-4 md:flex md:items-center md:justify-between"
-          >
-            <div class="flex items-center justify-between">
-              <div>
-                <a class="flex items-center gap-x-1 cursor-pointer" href="#">
-                  <img
-                    class="h-12 w-12 rounded-full"
-                    src="./assets/TUKANO_DIGITAL_SO.png"
-                    alt="logo-tucano-digital"
-                  />
-                  <span class="flex-col">
-                    <p class="uppercase text-2xl">tukano</p>
-                    <p class="uppercase text-xs text-left pl-1">digital</p>
-                  </span>
-                </a>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/fav-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/output.css" rel="stylesheet" />
+  <link href="./css/hamburger.css" rel="stylesheet" />
+  <title>Tukano Digital</title>
+</head>
 
-              <!-- Mobile menu button -->
-              <button
-                class="hamburger hamburger--collapse"
-                type="button"
-                id="btn-mobile"
-              >
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-                </span>
-              </button>
-            </div>
+<body>
+  <div id="app">
+    <my-header></my-header>
 
-            <!-- Mobile Menu open: 'block', Menu closed: 'hidden' -->
-            <div
-              class="hidden items-center pt-8 md:pt-0 md:flex"
-              id="menu-spande"
-            >
-              <div class="flex flex-col md:mx-6 md:flex-row menu-ativo">
-            
-                <a
-                  class="duration-200 transform my-1 text-sm font-medium text-gray-700 hover:text-red-500 dark:text-gray-200 dark:hover:text-rose-400 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear"
-                  >home</a
-                >
-                <a
-                  class="duration-200 transform my-1 text-sm font-medium text-gray-700 hover:text-red-500 dark:text-gray-200 dark:hover:text-rose-400 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear"
-                  >sobre nós</a
-                >
-                <a
-                  class="duration-200 transform my-1 text-sm font-medium text-gray-700 hover:text-red-500 dark:text-gray-200 dark:hover:text-rose-400 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear"
-                  >serviços</a
-                >
-                <a
-                  class="duration-200 transform my-1 text-sm font-medium text-gray-700 hover:text-red-500 dark:text-gray-200 dark:hover:text-rose-400 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear"
-                  >contato</a
-                >
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <script type="module" src="./main.js"></script>
-  </body>
+
+    <section class="bg-gradient-to-r from-orange-400 to-amber-200 absolute top-0 w-screen h-3/4 -z-10 flex justify-center items-center">
+      <article class="container">
+        <p class="text-3xl">Seção 1</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+      </article>
+    </section>
+
+
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>

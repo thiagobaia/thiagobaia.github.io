@@ -1,3 +1,5 @@
+import "./js/header"
+
 // ATIVAR MENU
 
 document.addEventListener("DOMContentLoaded", () => {

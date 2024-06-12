@@ -33,35 +33,7 @@
     }
   }
   
-  /*
-    * mobile hamburger active
-    */
-  
-  @media (max-width: 768px) {
-    .active {
-      visibility: visible;
-      display: flex;
-      flex-direction: column;
-      background: black;
-      top: 0;
-      left: 0;
-      padding: 0.8rem 1rem;
-      width: 100%;
-      max-width: 250px;
-      height: 100%;
-      opacity: 0.85;
-    }
-  }
-  
-  .back-video {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    z-index: -1;
-    width: 100%;
-  }
-  
+
   @media (max-aspect-ratio: 16/9) {
     .back-video {
       width: 100%;
