@@ -5,29 +5,32 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/fav-icon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./css/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="./build/index.css" rel="stylesheet" />
   <link href="./css/hamburger.css" rel="stylesheet" />
   <title>Tukano Digital</title>
 </head>
 
 <body>
   <div id="app">
-    <header class="bg-transparent z-50">
+    <header class="bg-gradient-to-r from-orange-400 to-amber-200 z-50">
       <nav class="bg-transparent w-screen">
         <div
           class="container mx-auto px-6 py-4 md:flex md:items-center md:justify-between"
         >
           <div class="flex items-center justify-between">
             <div>
-              <a class="flex items-center gap-x-1 cursor-pointer" href="#">
+              <a class="flex items-center gap-x-1 cursor-pointer" href="/">
                 <img
                   class="h-12 w-12 rounded-full"
                   src="./assets/TUKANO_DIGITAL_SO.png"
                   alt="logo-tucano-digital"
                 />
                 <span class="flex-col">
-                  <p class="uppercase text-2xl">tukano</p>
-                  <p class="uppercase text-xs text-left pl-1">digital</p>
+                  <p class="uppercase text-2xl font-roboto">tukano</p>
+                  <p class="uppercase text-xs text-left pl-1 font-roboto">digital</p>
                 </span>
               </a>
             </div>
@@ -49,19 +52,19 @@
             <ul class="flex flex-col md:mx-6 md:flex-row menu-ativo">
 
               <li>
-                <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear">home</a>
+                <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto" href="/">home</a>
               </li>
           
               <li>
-                <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear">sobre nós</a>
+                <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto" href="/sobre-nos">sobre nós</a>
               </li>
 
               <li>
-                <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear">serviços</a>
+                <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto" href="/servicos">serviços</a>
               </li>
 
               <li>
-                <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear">contato</a>
+                <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto" href="/contato">contato</a>
               </li>
             </ul>
           </nav>
@@ -70,10 +73,13 @@
     </header>
 
     <!-- Mobile Menu open: 'block', Menu closed: 'hidden' -->
-    <section class="bg-gradient-to-r from-orange-400 to-amber-200 absolute top-0 w-screen h-3/4 -z-10 flex justify-center items-center">
-      <article class="container">
-        <p class="text-3xl">Seção 1</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+    <section class="bg-gradient-to-r from-orange-400 to-amber-200 w-screen h-60 xss:h-96 flex justify-center items-center md:h-[600px]">
+      <article class="container px-3">
+        <div class="xss:max-w-96 md:max-w-3xl">
+          <p class="text-3xl font-roboto text-center font-bold pb-5 xss:text-5xl xss:text-left md:text-8xl">Tenha um Website para chamar de seu.</p>
+          <div class="md:max-w-[550px]"><p class="font-roboto text-center xss:text-left xss:text-xl md:text-4xl md:font-light">Tenha as mais praticas e melhores tecnologias do mercado no seu negocio.</p></div>
+          
+        </div>
       </article>
     </section>
 

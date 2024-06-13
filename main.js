@@ -3,6 +3,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuItems = document.querySelectorAll(".menu-ativo a");
 
+  // Verifica se a página atual é a raiz "/"
+  if (window.location.pathname === '/') {
+    menuItems.forEach((item) => {
+      if (item.innerText.toLowerCase().includes("home")) {
+        item.classList.add("active");
+      }
+    });
+  }
+
   menuItems.forEach((item) => {
     item.addEventListener("click", () => {
       // Remove a classe 'active' de todos os links

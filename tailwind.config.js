@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./**"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'xss': '468px',
+      },
+      fontFamily: {
+        roboto: ['Roboto']
+      }
+    },
   },
   plugins: [],
 }
