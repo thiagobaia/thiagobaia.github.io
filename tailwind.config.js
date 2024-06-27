@@ -8,7 +8,10 @@ module.exports = {
       },
       fontFamily: {
         roboto: ['Roboto']
-      }
+      },
+      colors: {
+        blackPiano:'#141414'
+      },
     },
   },
   plugins: [],

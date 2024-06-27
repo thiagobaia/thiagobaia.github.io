@@ -1,26 +1,26 @@
-// ATIVAR MENU
+// // ATIVAR MENU
 
-document.addEventListener("DOMContentLoaded", () => {
-  const menuItems = document.querySelectorAll(".menu-ativo a");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const menuItems = document.querySelectorAll(".menu-ativo a");
 
-  // Verifica se a página atual é a raiz "/"
-  if (window.location.pathname === '/') {
-    menuItems.forEach((item) => {
-      if (item.innerText.toLowerCase().includes("home")) {
-        item.classList.add("active");
-      }
-    });
-  }
+//   // Verifica se a página atual é a raiz "/"
+//   if (window.location.pathname === '/') {
+//     menuItems.forEach((item) => {
+//       if (item.innerText.toLowerCase().includes("home")) {
+//         item.classList.add("active");
+//       }
+//     });
+//   }
 
-  menuItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      // Remove a classe 'active' de todos os links
-      menuItems.forEach((link) => link.classList.remove("active"));
-      // Adiciona a classe 'active' ao link clicado
-      item.classList.add("active");
-    });
-  });
-});
+//   menuItems.forEach((item) => {
+//     item.addEventListener("click", () => {
+//       // Remove a classe 'active' de todos os links
+//       menuItems.forEach((link) => link.classList.remove("active"));
+//       // Adiciona a classe 'active' ao link clicado
+//       item.classList.add("active");
+//     });
+//   });
+// });
 
 // MENU HAMBURGER
 
