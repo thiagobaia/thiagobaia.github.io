@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link href="./build/index.css" rel="stylesheet" />
   <link href="./css/hamburger.css" rel="stylesheet" />
   <title>Tukano Digital</title>
-  <script src="form.js" type="text/javascript"></script>
+  <script src="./form.js" type="text/javascript"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <div id="app">
+  <div id="home">
     <header class="bg-gradient-to-r from-orange-400 to-amber-200 z-50" id="home">
       <nav class="bg-transparent w-full">
         <div class="container mx-auto px-6 py-4 md:flex md:items-center md:justify-between">
@@ -64,12 +64,12 @@
 
               <li>
                 <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto"
-                  href="/servicos">serviços</a>
+                  href="#servicos">serviços</a>
               </li>
 
               <li>
                 <a class="duration-200 transform my-1 text-sm font-medium text-gray-900 hover:text-red-500 md:mx-4 md:my-0 uppercase cursor-pointer transition ease-linear font-roboto"
-                  href="/contato">contato</a>
+                  href="#contato">contato</a>
               </li>
             </ul>
           </nav>
@@ -98,10 +98,8 @@
 
     <!-- SOBRE NOS -->
     <div class="flex flex-col py-10 gap-y-5 md:py-10 scroll-mt-px-[890px]" id="sobre-nos">
-      <div class="flex flex-col justify-center items-center w-full gap-y-5 border-b-2">
-
+      <div class="flex flex-col justify-center items-center w-full gap-y-5 py-20">
         <span class="container flex items-center justify-center flex-col gap-y-5">
-
           <p class="font-roboto text-center xss:text-left xss:text-xl md:text-2xl md:font-light text-blackPiano">
             SOBRE NÓS
           </p>
@@ -111,123 +109,218 @@
           </p>
 
           <div class="flex flex-col lg:flex-row items-center">
-            <img class="w-full max-w-[20rem] md:max-w-[30rem] xl:max-w-[40rem] "
-              src="/assets/conceito-de-trabalho-em-equipe-para-a-pagina-de-destino.png" alt="sobre-nos">
-            <p class="font-roboto text-center md:text-justify text-xl md:text-2xl font-light text-blackPiano px-5">
-              Nossa empresa se destaca por criar sites com layouts personalizados, convertendo designs exclusivos do
-              Figma em plataformas digitais de alta performance. Diferentemente de templates prontos, oferecemos
-              soluções sob medida que capturam a essência da sua marca. Focamos em proporcionar uma experiência de
-              usuário intuitiva, garantindo navegação fluida e desempenho otimizado. Cada projeto é único, refletindo a
-              identidade do cliente e impulsionando seu sucesso online.
+            <img class="w-full max-w-[20rem] md:max-w-[30rem] xl:max-w-[40rem]"
+              src="/assets/conceito-de-trabalho-em-equipe-para-a-pagina-de-destino.png" alt="sobre-nos" />
+            <p
+              class="font-roboto text-center text-base pt-5 md:text-justify md:text-2xl font-light text-blackPiano px-5">
+              Nossa empresa se destaca por criar sites com layouts
+              personalizados, convertendo designs exclusivos do Figma em
+              plataformas digitais de alta performance. Diferentemente de
+              templates prontos, oferecemos soluções sob medida que capturam a
+              essência da sua marca. Focamos em proporcionar uma experiência
+              de usuário intuitiva, garantindo navegação fluida e desempenho
+              otimizado. Cada projeto é único, refletindo a identidade do
+              cliente e impulsionando seu sucesso online.
             </p>
           </div>
-
         </span>
-        <form id="contact-form">
-          <!-- To simplify the tutorial, the value is static. -->
-          <input type="hidden" name="contact_number" value="697483">
-          <label>Name</label>
-          <input type="text" name="user_name">
-          <label>Email</label>
-          <input type="email" name="user_email">
-          <label>Message</label>
-          <textarea name="message"></textarea>
-          <input type="submit" value="Send">
-        </form>
-        class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block
-        text-transparent bg-clip-text"></i>
-        <p class="text-2xl">Alto Desempenho</p>
-        </span>
-        <p>Alta performace e velociade para o seu site, garantindo uma melhor experiencia para seus clientes.</p>
-        </li>
+      </div>
+    </div>
 
-        <li class="max-w-[400px]">
-          <span class="flex items-center gap-x-3">
-            <i
-              class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
-            <p class="text-2xl">SEO</p>
-          </span>
-          <p>Melhora a credibilidade da marca ao posicioná-la entre os primeiros resultados de busca do Google.</p>
-        </li>
+    <!-- VAMOS CONVERSAR -->
+    <div class="bg-gradient-to-r from-orange-400 to-amber-400 py-36 flex flex-col px-5 justify-center items-center">
+      <p class="text-center text-white font-semibold md:text-2xl max-w-[700px]">
+        Conte com o nosso auxílio para colocar sua empresa no digital com
+        destaque e visibilidade! Estamos aqui para ajudar você a se destacar
+        no mundo digital.
+      </p>
+      <button type="button"
+        class="m-4 p-3 rounded-full bg-gradient-to-r from-orange-700 to-orange-500 hover:from-orange-500 hover:to-orange-700 max-w-[300px]">
+        <p class="text-white font-semibold">Vamos Conversar?</p>
+      </button>
+    </div>
 
-        <li class="max-w-[400px]">
-          <span class="flex items-center gap-x-3">
-            <i
-              class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
-            <p class="text-2xl">Trafego Pago</p>
-          </span>
-          <p>Desenvolvemos a melhor estrategia para prospectar novos clientes.</p>
-        </li>
+    <!-- SERVICOS -->
+    <div class="flex justify-center items-center flex-col lg:py-40 scroll-mt-px-[700px]" id="servicos">
+      <p class="font-roboto text-center xss:text-left xss:text-xl md:text-2xl md:font-light text-blackPiano">
+        SERVIÇOS
+      </p>
 
-        <li class="max-w-[400px]">
-          <span class="flex items-center gap-x-3">
-            <i
-              class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
-            <p class="text-2xl">Suporte Humanizado</p>
-          </span>
-          <p>Melhorando sua satisfação como cliente, criando uma conexão profissional de respeito e confiança.</p>
-        </li>
+      <span class="flex justify-center my-10">
+        <p class="font-bold text-xl lg:text-3xl text-center">
+          Pensados para você se destacar no digital
+        </p>
+      </span>
 
-        <li class="max-w-[400px]">
-          <span class="flex items-center gap-x-3">
-            <i
-              class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
-            <p class="text-2xl">Designer Personalizado</p>
-          </span>
-          <p>Proporciona uma experiência de usuário intuitiva e envolvente, destacando-se da concorrência.</p>
-        </li>
+      <div class="flex justify-center py-20">
+        <ul class="container flex flex-wrap justify-center items-center gap-y-10 gap-x-20 p-5">
+          <li class="max-w-[400px]">
+            <span class="flex items-center gap-x-3">
+              <i
+                class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
+              <p class="text-2xl font-roboto">Alto Desempenho</p>
+            </span>
+            <p>
+              Alta performace e velociade para o seu site, garantindo uma
+              melhor experiencia para seus clientes.
+            </p>
+          </li>
 
-        <li class="max-w-[400px]">
-          <span class="flex items-center gap-x-3">
-            <i
-              class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
-            <p class="text-2xl">Google Meu Negócio</p>
-          </span>
-          <p>Maximize sua presença online e fortaleça sua reputação com essa ferramenta essencial.</p>
-        </li>
+          <li class="max-w-[400px]">
+            <span class="flex items-center gap-x-3">
+              <i
+                class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
+              <p class="text-2xl font-roboto">SEO</p>
+            </span>
+            <p>
+              Melhora a credibilidade da marca ao posicioná-la entre os
+              primeiros resultados de busca do Google.
+            </p>
+          </li>
+
+          <li class="max-w-[400px]">
+            <span class="flex items-center gap-x-3">
+              <i
+                class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
+              <p class="text-2xl font-roboto">Trafego Pago</p>
+            </span>
+            <p>
+              Desenvolvemos a melhor estrategia para prospectar novos
+              clientes.
+            </p>
+          </li>
+
+          <li class="max-w-[400px]">
+            <span class="flex items-center gap-x-3">
+              <i
+                class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
+              <p class="text-2xl font-roboto">Suporte Humanizado</p>
+            </span>
+            <p>
+              Melhorando sua satisfação como cliente, criando uma conexão
+              profissional de respeito e confiança.
+            </p>
+          </li>
+
+          <li class="max-w-[400px]">
+            <span class="flex items-center gap-x-3">
+              <i
+                class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
+              <p class="text-2xl font-roboto">Designer Personalizado</p>
+            </span>
+            <p>
+              Proporciona uma experiência de usuário intuitiva e envolvente,
+              destacando-se da concorrência.
+            </p>
+          </li>
+
+          <li class="max-w-[400px]">
+            <span class="flex items-center gap-x-3">
+              <i
+                class="fa-solid fa-diamond fa-3x bg-gradient-to-r from-orange-700 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text"></i>
+              <p class="text-2xl font-roboto">Google Meu Negócio</p>
+            </span>
+            <p>
+              Maximize sua presença online e fortaleça sua reputação com essa
+              ferramenta essencial.
+            </p>
+          </li>
         </ul>
       </div>
+      <button class="m-4 p-1 rounded-full from-orange-700 via-orange-500 to-orange-300 bg-gradient-to-r">
+        <span
+          class="block text-blackPiano px-4 py-2 font-semibold rounded-full bg-white hover:bg-transparent hover:text-white transition">Saiba
+          mais</span>
+      </button>
+    </div>
 
+    <!-- FORMULARIO CONTATO -->
+    <div class="bg-gradient-to-r from-orange-400 to-amber-400 py-20 flex flex-col justify-center items-center" id="contato">
 
-      <div>
-        <p class="font-roboto text-2xl font-light text-blackPiano">VAMOS CONVERSAR SOBRE?</p>
-        <p>Adoraríamos Conhecer o seu Projeto</p>
+      <div class="container flex flex-col lg:flex-row px-5 justify-center gap-x-5">
+        <div class="flex flex-col gap-y-5 w-full">
+
+          <p class="font-light text-2xl text-white">Contato</p>
+          <p class="font-bold text-3xl text-white">Fale conosco</p>
+          <p class="font-light text-1xl text-white">Agende uma ligação ou chamada de vídeo, através do formulário a seguir.</p>
+
+          <div class="text-white font-semibold">
+            <h5 for="name">Name</h5>
+            <input type="text" class="w-full p-3 rounded-md outline-slate-300 text-black" id="name"
+              placeholder="Digite seu nome" />
+          </div>
+
+          <div class="text-white font-semibold">
+            <h5 for="email">Email</h5>
+            <input type="email" class="w-full p-3 rounded-md outline-slate-300 text-black" id="email"
+              placeholder="Digite seu e-mail" />
+          </div>
+
+          <div class="text-white font-semibold">
+            <h5 for="message">Message</h5>
+            <textarea class="w-full rounded-md h-52 p-3 outline-slate-300 text-black" id="message"
+              placeholder="Escreva sua mensagem"></textarea>
+          </div>
+
+          <button class="bg-orange-700 text-white font-semibold rounded-md p-3" onclick="sendMail()">
+            Entrar em Contato
+          </button>
+        </div>
+
+        <div class="w-full flex flex-col">
+          <iframe class="w-full lg:max-w-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.6821972755863!2d-43.93821083036549!3d-19.93583053810152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699dbbedf4f3f%3A0xb66dc98a4724420f!2sR.%20Sergipe%2C%201053%20-%20Funcion%C3%A1rios%2C%20Belo%20Horizonte%20-%20MG%2C%2030130-174!5e0!3m2!1sen!2sbr!4v1721268123062!5m2!1sen!2sbr"
+            height="300" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+          <div style="
+                background-image: url('./assets/sun-tornado.svg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+              " class="pt-5 px-3 lg:max-w-lg">
+            <span class="text-white font-roboto">
+              <p class="uppercase">endereço</p>
+              <p class="pl-2 py-3">
+                R. Sergipe, 1053 - Funcionários, Belo Horizonte - MG,
+                30130-174
+              </p>
+              <p class="uppercase">whatsapp</p>
+              <p class="pl-2 py-3">
+                (94) 99292-2453 <br />
+                (31) 98454-5543
+              </p>
+            </span>
+
+            <span class="text-white uppercase font-roboto">
+              <p class="uppercase">e-mail</p>
+              <p class="pl-2 py-3 lowercase">contato@tukanodigital.com.br</p>
+              <p class="uppercase">nos siga</p>
+              <div class="pl-2 py-3">
+                <i class="fa-brands fa-square-facebook fa-2x"></i>
+                <i class="fa-brands fa-square-instagram fa-2x"></i>
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+              </div>
+            </span>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="fixed bottom-4 right-4">
+      <a aria-label="Chat on WhatsApp" href="https://wa.me/5594992922453" target="_blank">
+        <img class="transition duration-700 ease-in-out hover:brightness-50" width="75px" alt="Chat on WhatsApp"
+          src="/assets/whatsapp.png" class="m-0" />
+      </a>
+    </div>
 
 
-
-
-
-
-
-      <div class="fixed bottom-4 right-4">
-        <a aria-label="Chat on WhatsApp" href="https://wa.me/5594992922453" target="_blank"><img
-            class="transition duration-700 ease-in-out hover:brightness-50" width="75px" alt="Chat on WhatsApp"
-            src="/assets/whatsapp.png" class="m-0" />
-          <a />
-      </div>
-
-      <div>
-        <label>Name</label>
-        <input id="name" type="text">
-
-        <label>Email</label>
-        <input id="email" type="email">
-
-        <label>Message</label>
-        <textarea id="message"></textarea>
-
-        <button id="btn" onclick="sendMail()">Submit</button>
-      </div>
-
-
-
-      <footer>
-
-      </footer>
+    <div class="fixed bottom-0 left-0 text-white">
+      <a href="#home"><i class="fa-solid fa-arrow-up fa-1x bg-orange-600 p-3"></i></a>
     </div>
 
     <script type="module" src="./main.js"></script>
+  </div>
 </body>
 
 </html>

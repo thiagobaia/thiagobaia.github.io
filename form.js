@@ -5,12 +5,18 @@ function sendMail() {
     message: document.getElementById("message").value,
   };
 
-  emailjs
-    .send("service_llaiv6c", "template_4i03s19", params)
-    .then((res) => {
-      console.log(res);
-      alert("Email enviado com sucesso!");
-    })
+  const serviceID = "service_llaiv6c";
+  const templateID = "template_4i03s19";
 
-    .cath((err) => console.log(err));
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
 }
