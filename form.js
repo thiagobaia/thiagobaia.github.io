@@ -4,11 +4,8 @@ function sendMail() {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     message: document.getElementById("message").value,
-    "g-recaptcha-response": captchaToken,
   };
 
-
-emailjs.send(serviceID, templateID, params)
 
   const serviceID = "service_llaiv6c";
   const templateID = "template_4i03s19";
