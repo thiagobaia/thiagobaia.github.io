@@ -12,6 +12,14 @@
   <link href="./build/index.css" rel="stylesheet" />
   <link href="./css/hamburger.css" rel="stylesheet" />
   <title>Tukano Digital</title>
+  <script type="text/javascript">
+    var onloadCallback = function() {
+      grecaptcha.render('recaptchaTemplate', {
+        'sitekey' : '6LdbWBoqAAAAAGDKr1-oRZddiU1y3qsipOKY8rZ3',
+        onloadCallback: successCallBack,
+      });
+    };
+  </script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="./form.js" type="text/javascript"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -284,7 +292,7 @@
               placeholder="Escreva sua mensagem"></textarea>
           </div>
 
-          <div class="g-recaptcha" data-sitekey="6LdbWBoqAAAAAGDKr1-oRZddiU1y3qsipOKY8rZ3"></div>
+          <div id="recaptchaTemplate" class="g-recaptcha"></div>
 
           <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3"
             onclick="sendMail()">
