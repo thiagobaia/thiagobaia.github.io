@@ -26,8 +26,3 @@ function sendMail() {
     })
     .catch(err => console.log(err));
 }
-
-
-function successCallBack (token){
-  return;
-}
