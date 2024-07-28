@@ -277,52 +277,32 @@
           </p>
 
           <form id="register" action="" method="post">
-        
-            <h5 for="name">Name</h5>
-            <input type="text" class="w-full p-3 rounded-md outline-slate-300 text-black" id="name"
-              placeholder="Digite seu nome" />
-
-            
+            <div class="text-white font-semibold">
+              <h5 for="name">Name</h5>
+              <input type="text" class="w-full p-3 rounded-md outline-slate-300 text-black" id="name"
+                placeholder="Digite seu nome" />
+            </div>
+  
+            <div class="text-white font-semibold">
               <h5 for="email">Email</h5>
               <input type="email" class="w-full p-3 rounded-md outline-slate-300 text-black" id="email"
                 placeholder="Digite seu e-mail" />
-
-                <h5 for="message">Message</h5>
-                <textarea class="w-full rounded-md h-52 p-3 outline-slate-300 text-black" id="message"
-                  placeholder="Escreva sua mensagem"></textarea>
-
-
-                  <div id='recaptcha' class="g-recaptcha" data-sitekey="6LdbWBoqAAAAAGDKr1-oRZddiU1y3qsipOKY8rZ3" data-callback="sendForm" data-size="invisible"></div>
-
-
-                  <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3"
-                  onclick="sendMail()">
-                  Entrar em Contato
-                </button>
+            </div>
+  
+            <div class="text-white font-semibold">
+              <h5 for="message">Message</h5>
+              <textarea class="w-full rounded-md h-52 p-3 outline-slate-300 text-black" id="message"
+                placeholder="Escreva sua mensagem"></textarea>
+            </div>
+  
+            <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3"
+              onclick="sendMail()">
+              Entrar em Contato
+            </button>
+      
           </form>
 
-          <div class="text-white font-semibold">
-            <h5 for="name">Name</h5>
-            <input type="text" class="w-full p-3 rounded-md outline-slate-300 text-black" id="name"
-              placeholder="Digite seu nome" />
-          </div>
-
-          <div class="text-white font-semibold">
-            <h5 for="email">Email</h5>
-            <input type="email" class="w-full p-3 rounded-md outline-slate-300 text-black" id="email"
-              placeholder="Digite seu e-mail" />
-          </div>
-
-          <div class="text-white font-semibold">
-            <h5 for="message">Message</h5>
-            <textarea class="w-full rounded-md h-52 p-3 outline-slate-300 text-black" id="message"
-              placeholder="Escreva sua mensagem"></textarea>
-          </div>
-
-          <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3"
-            onclick="sendMail()">
-            Entrar em Contato
-          </button>
+ 
 
           <!-- Parágrafo para mensagem de sucesso -->
           <div id="successMessage" style="display: none" class="bg-green-500 fixed top-2 right-4 p-3 rounded-lg">
@@ -479,7 +459,22 @@
     </div>
 
     <script type="module" src="./main.js"></script>
-    </script>
+    <script type="text/javascript">
+      let form = document.querySelector('#register');
+      form.addEventListener('submit',  e => {
+          e.preventDefault();
+          let name = document.querySelector('#name');
+          let email = document.querySelector('#email');
+          if(!name.value || !email.value) {
+              alert('Nome e Email são Obrigatorios');
+              } else{
+              grecaptcha.execute();
+          }       
+          });
+      function sendForm(){
+          alert("reCAPTCHA funcionou");
+      }
+  </script>
   </div>
 </body>
 
