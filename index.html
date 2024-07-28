@@ -277,7 +277,8 @@
             seguir.
           </p>
 
-       
+          <form  method="POST" id="shev-form">
+
             <div class="text-white font-semibold">
               <h5 for="name">Name</h5>
               <input type="text" class="w-full p-3 rounded-md outline-slate-300 text-black" id="name"
@@ -296,10 +297,16 @@
                 placeholder="Escreva sua mensagem"></textarea>
             </div>
             <div class="g-recaptcha" data-sitekey="6LdbWBoqAAAAAGDKr1-oRZddiU1y3qsipOKY8rZ3"></div>
-            <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3"
+
+            <!-- <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3"
               onclick="sendMail()">
               Entrar em Contato
-            </button>
+            </button> -->
+
+            <input class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3" type="submit" value="Entrar em Contato" id="submit_id" onclick="sendMail()">
+
+          </form>
+       
       
          
 
