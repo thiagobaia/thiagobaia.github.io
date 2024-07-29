@@ -9,7 +9,6 @@ function sendMail() {
     "g-recaptcha-response": captchaToken,
   };
 
-
   const serviceID = "service_llaiv6c";
   const templateID = "template_4i03s19";
 
@@ -18,7 +17,6 @@ function sendMail() {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
-      console.log(res);
       
       // Mostra o parágrafo de sucesso
       var successMessage = document.getElementById("successMessage");
