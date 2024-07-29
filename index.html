@@ -277,7 +277,7 @@
             seguir.
           </p>
 
-          <form  action="?" method="POST" >
+          <form  action="?" method="POST" id="contact-form" onsubmit="sendMail(); return false;" >
 
             <div class="text-white font-semibold">
               <h5 for="name">Name</h5>
@@ -298,12 +298,12 @@
             </div>
             <div class="g-recaptcha" data-sitekey="6LdbWBoqAAAAAGDKr1-oRZddiU1y3qsipOKY8rZ3"></div>
 
-            <!-- <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3"
+            <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3"
               onclick="sendMail()">
               Entrar em Contato
-            </button> -->
+            </button>
 
-            <input class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3" type="submit" value="Entrar em Contato"  onclick="sendMail()">
+            <!-- <input class="bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md p-3" type="submit" value="Entrar em Contato"  onclick="sendMail()"> -->
 
           </form>
        
